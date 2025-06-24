@@ -1,7 +1,13 @@
+import Banner from "./Components/Banner";
+import Link from "./Components/Link";
+
 function App() {
   return (
     <>
-      <p>Teste</p>
+      <Banner src="./Banner.png" alt={"Banner do site"} />
+      <Link href="/" target="_blank">
+        Link
+      </Link>
     </>
   );
 }
