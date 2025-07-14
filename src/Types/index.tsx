@@ -1,0 +1,19 @@
+export type Categoria = "2D" | "3D";
+export type Censura =
+  | "10 anos"
+  | "12 anos"
+  | "14 anos"
+  | "16 anos"
+  | "2D"
+  | "3D";
+
+export interface Movie {
+  id: number;
+  src: string;
+  alt: string;
+  titulo: string;
+  genero: string;
+  categoria: Categoria;
+  duracao: number;
+  censura: Censura;
+}

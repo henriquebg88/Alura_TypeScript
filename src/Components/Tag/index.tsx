@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./Tag.module.css";
 import classNames from "classnames";
-
-type Categoria = "2D" | "3D";
-type Censura = "10 anos" | "12 anos" | "14 anos" | "16 anos" | "2D" | "3D";
+import type { Categoria, Censura } from "../../Types";
 
 interface Tag extends React.HTMLAttributes<HTMLSpanElement> {
   value: Categoria | Censura;
