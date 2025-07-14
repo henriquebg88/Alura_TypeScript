@@ -6,14 +6,15 @@ type FieldsetProps = {
 } & React.FieldsetHTMLAttributes<HTMLFieldSetElement>;
 
 const FieldSet = ({ children, variant = "Primary" }: FieldsetProps) => {
-  return;
-  <fieldset
-    className={`${Styles.inputWrapper} ${
-      variant == "Primary" ? Styles.primary : Styles.secondary
-    }`}
-  >
-    {children}
-  </fieldset>;
+  return (
+    <fieldset
+      className={`${Styles.inputWrapper} ${
+        variant == "Primary" ? Styles.primary : Styles.secondary
+      }`}
+    >
+      {children}
+    </fieldset>
+  );
 };
 
 export default FieldSet;
